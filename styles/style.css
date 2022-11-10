@@ -21,7 +21,6 @@
   padding: 0;
 }
 
-
 .logo {
   width: 228px;
   height: 32px;
@@ -56,8 +55,7 @@
   bottom:30px;
   left: 64px;
   line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
+   font-weight: normal;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
