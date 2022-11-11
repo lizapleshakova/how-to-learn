@@ -4,7 +4,7 @@
   /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
   /* выше установили ограничение по максимальной ширине */
-
+  margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
  }
@@ -37,8 +37,13 @@
 .header__title{
   display: flex;
   align-self: center;
-  margin-left:64px;
-  width: 730px;
+  padding: 0;
+  margin-left: 64px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  max-width: 730px;
+  width: 100%;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
@@ -48,14 +53,21 @@
   text-decoration: none;
 }
 
+.header__link {
+  color:#2f80ed;
+}
+
 .header__subtitle {
-  width: 388px;
+  max-width: 388px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   font-size: 18px;
   position: absolute;
   bottom:30px;
   left: 64px;
   line-height: 25px;
-   font-weight: normal;
+  font-weight: normal;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -90,13 +102,15 @@
 }
 
 .two-columns__brief{
-  width: 175px;
+  max-width: 175px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
-
-}
+ }
 
 .two-columns__main-text {
   width: 80%;
@@ -104,17 +118,22 @@
 }
 
 .two-columns__paragraph {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 30px;
+  padding: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin-bottom: 30px;
+
 }
-.two-columns__paragraph-bold {
+.two-columns__span-accent {
   font-weight: bold;
 }
 
-.two-columns__paragraph::last-of-type{
-  margin: 0;
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
 }
 
 .digits {
@@ -130,7 +149,8 @@
 }
 
 .section-title {
-width: 80%;
+max-width: 60%;
+width: 100%;
 margin: 0;
 text-align: center;
 font-size: 60px;
@@ -140,7 +160,8 @@ line-height: 1.15;
 }
 
 .section-subtitle {
-width: 60%;
+max-width: 60%;
+width: 100%;
 margin-top: 20px;
 margin-bottom: 0;
 text-align: center;
@@ -181,7 +202,7 @@ line-height: 34px;
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 890px;
+  min-height: 890px;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 100px;
@@ -189,8 +210,14 @@ line-height: 34px;
 }
 
 .feynman__title {
-  width: 648px;
+  max-width: 648px;
+  width: 100%;
   text-align: center;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
   font-size: 120px;
   font-weight: 600;
   line-height: 1.15;
@@ -198,6 +225,8 @@ line-height: 34px;
 }
 
 .feynman__subtitle {
+  margin: 0;
+  padding: 0;
   text-align: center;
   font-size: 36px;
   font-weight: normal;
@@ -215,6 +244,7 @@ line-height: 34px;
 
 }
 .feynman__link {
+  color: #2f80ed;
   position: absolute;
   right: 48px;
   top: 50%;
@@ -227,7 +257,7 @@ line-height: 34px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:  black;
+  background-color:  #1f1f1f;
   overflow: hidden;
   position: relative;
   padding-top: 90px;
@@ -274,13 +304,16 @@ min-height: 350px;
 color: white;
 display: flex;
 justify-content: center;
-background-color: black;
-padding-top: 60px;
-padding-bottom: 40px;
+background-color: #1f1f1f;
+padding: 0;
+margin 0;
+
 }
 
-.footer_columns {
+.footer__columns {
   width: 90%;
+  margin-top: 60px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
   }
@@ -300,6 +333,8 @@ padding-bottom: 40px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .footer__column_content_info {
@@ -312,7 +347,6 @@ padding-bottom: 40px;
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 20px;
-
 }
 
 .footer__column-links {
@@ -320,17 +354,15 @@ padding-bottom: 40px;
   margin-bottom: 16px;
   margin-top: 0;
   padding-left: 0;
-
 }
 
 .footer__column-link {
-
+  text-decoration: none;
   padding-left: 0;
   color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-
 }
 
 
@@ -339,7 +371,6 @@ padding-bottom: 40px;
   height: 16px;
   padding-left: 0;
   padding-right: 10px;
-
 }
 
 
