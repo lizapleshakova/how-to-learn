@@ -1,0 +1,11 @@
+
+
+.video {
+  padding-top: 100px;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
+}
+
