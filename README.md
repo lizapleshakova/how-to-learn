@@ -1,5 +1,5 @@
 # Научиться учиться
------
+
 Ссылка на проект [GitHub Pages](lizapleshakova.github.io/how-to-learn/).
 
 ![screenshot](images/screenshot.JPG)
