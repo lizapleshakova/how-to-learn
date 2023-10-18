@@ -1,5 +1,7 @@
 # Научиться учиться
 -----
+Ссылка на проект [GitHub Pages](lizapleshakova.github.io/how-to-learn/).
+
 ![screenshot](images/screenshot.JPG)
 
 - Информативный и интерактивный веб-сайт с полезными советами по обучению.
